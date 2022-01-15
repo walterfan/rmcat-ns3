@@ -54,6 +54,7 @@
 #include "rtc_base/win32socketinit.h"
 
 #if defined(WEBRTC_POSIX)
+#include <linux/sockios.h>
 #include <netinet/tcp.h>  // for TCP_NODELAY
 #define IP_MTU 14 // Until this is integrated from linux/in.h to netinet/in.h
 typedef void* SockOptArg;
