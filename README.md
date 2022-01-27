@@ -19,6 +19,14 @@ then link `./webrtc-lib/webrtc/base/libevent` to `/home/walter/workspace/webrtc/
 ln -s /home/walter/workspace/webrtc/libevent-2.1.12-stable ./webrtc-lib/webrtc/base/libevent
 ```
 
+then build webrtc-lib as the following guideline.
+
+finally, put webrtc-scratch, run
+
+```
+./waf --run webrtc-scratch
+```
+
 # overview
 
 A comparison of rmcat protocol, namely NADA, GCC and SCReAM on ns3 platform. The version of ns is 3.26.   
