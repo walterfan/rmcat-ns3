@@ -1,4 +1,20 @@
 # rmcat-ns3
+
+It is forked from SoonyangZhang's repo, I did a little change for CMakeLists.txt , readme and physicalsocketserver.cc
+
+Please install libevent first
+
+```
+wget https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+tar xvfz libevent-2.1.12-stable.tar.gz
+./configure
+make
+make install
+```
+
+
+# overview
+
 A comparison of rmcat protocol, namely NADA, GCC and SCReAM on ns3 platform. The version of ns is 3.26.   
 The paper link https://arxiv.org/pdf/1809.00304.pdf   
 The simulation code of NADA can get from https://github.com/cisco/ns3-rmcat  
