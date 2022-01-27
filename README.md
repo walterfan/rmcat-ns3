@@ -7,11 +7,17 @@ Please install libevent first
 ```
 wget https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
 tar xvfz libevent-2.1.12-stable.tar.gz
+cd libevent-2.1.12-stable
 ./configure
 make
 make install
 ```
 
+then link `./webrtc-lib/webrtc/base/libevent` to `/home/walter/workspace/webrtc/libevent-2.1.12-stable`
+
+```
+ln -s /home/walter/workspace/webrtc/libevent-2.1.12-stable ./webrtc-lib/webrtc/base/libevent
+```
 
 # overview
 
