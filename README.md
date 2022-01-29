@@ -23,10 +23,10 @@ then build webrtc-lib as the following guideline, and put the following module u
 
 ```
 $ cd ns-3.35
-$ ln -s ~/workspace/webrtc/rmcat-ns3/webrtc-scratch src/webrtc-scratch
+$ ln -s ~/workspace/webrtc/rmcat-ns3/webrtc-scratch scratch/webrtc-scratch
 $ ln -s ~/workspace/webrtc/rmcat-ns3/multipathvideo src/multipathvideo
 $ ln -s ~/workspace/webrtc/rmcat-ns3/mytrace src/mytrace -> 
-$ ln -s ~/workspace/webrtc/rmcat-ns3/webrtc-ns3 scratch/webrtc-ns3
+$ ln -s ~/workspace/webrtc/rmcat-ns3/webrtc-ns3 src/webrtc-ns3
 ```
 
 finally, put webrtc-scratch, run
