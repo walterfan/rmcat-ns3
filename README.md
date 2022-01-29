@@ -1,4 +1,4 @@
-# rmcat-ns3
+# Overview
 
 It is forked from SoonyangZhang's repo, I did a little change for CMakeLists.txt , readme and physicalsocketserver.cc
 
@@ -13,13 +13,21 @@ make
 make install
 ```
 
-then link `./webrtc-lib/webrtc/base/libevent` to `/home/walter/workspace/webrtc/libevent-2.1.12-stable`
+then link `./webrtc-lib/webrtc/base/libevent` to `~/workspace/webrtc/libevent-2.1.12-stable`
 
 ```
 ln -s /home/walter/workspace/webrtc/libevent-2.1.12-stable ./webrtc-lib/webrtc/base/libevent
 ```
 
-then build webrtc-lib as the following guideline.
+then build webrtc-lib as the following guideline, and put the following module under ns-3 (ns-allinone-3.35/ns-3.35)
+
+```
+$ cd ns-3.35
+$ ln -s ~/workspace/webrtc/rmcat-ns3/webrtc-scratch src/webrtc-scratch
+$ ln -s ~/workspace/webrtc/rmcat-ns3/multipathvideo src/multipathvideo
+$ ln -s ~/workspace/webrtc/rmcat-ns3/mytrace src/mytrace -> 
+$ ln -s ~/workspace/webrtc/rmcat-ns3/webrtc-ns3 scratch/webrtc-ns3
+```
 
 finally, put webrtc-scratch, run
 
@@ -27,7 +35,7 @@ finally, put webrtc-scratch, run
 ./waf --run webrtc-scratch
 ```
 
-# overview
+# rmcat-ns3
 
 A comparison of rmcat protocol, namely NADA, GCC and SCReAM on ns3 platform. The version of ns is 3.26.   
 The paper link https://arxiv.org/pdf/1809.00304.pdf   
