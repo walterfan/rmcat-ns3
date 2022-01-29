@@ -29,6 +29,18 @@ $ ln -s ~/workspace/webrtc/rmcat-ns3/mytrace src/mytrace ->
 $ ln -s ~/workspace/webrtc/rmcat-ns3/webrtc-ns3 src/webrtc-ns3
 ```
 
+then edit /etc/profile as following
+
+```
+export PATH=/home/walter/workspace/webrtc/depot_tools:$PATH
+export WEBRTC_LIB=/home/walter/workspace/webrtc/rmcat-ns3/webrtc-lib
+export LD_LIBRARY_PATH=$WEBRTC_LIB/webrtc/system_wrappers:$WEBRTC_LIB/webrtc/rtc_base:$WEBRTC_LIB/webrtc/api:$WEBRTC_LIB/webrtc/logging:$WEBRTC_LIB/webrtc/modules/utility:$WEBRTC_LIB/webrtc/modules/pacing:$WEBRTC_LIB/webr
+tc/modules/congestion_controller:$WEBRTC_LIB/webrtc/modules/bitrate_controller:$WEBRTC_LIB/webrtc/modules/remote_bitrate_estimator:$WEBRTC_LIB/webrtc/modules/rtp_rtcp:$LD_LIBRARY_PATH
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$WEBRTC_LIB/webrtc/:$WEBRTC_LIB/webrtc/system_wrappers:$WEBRTC_LIB/webrtc/rtc_base:$WEBRTC_LIB/webrtc/api:$WEBRTC_LIB/webrtc/logging:$WEBRTC_LIB/webrtc/modules/utility:$WEBRTC
+_LIB/webrtc/modules/pacing:$WEBRTC_LIB/webrtc/modules/congestion_controller:$WEBRTC_LIB/webrtc/modules/bitrate_controller:$WEBRTC_LIB/webrtc/modules/remote_bitrate_estimator:$WEBRTC_LIB/webrtc/modules/rtp_rtcp
+
+```
+
 finally, put webrtc-scratch, run
 
 ```
